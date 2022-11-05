@@ -31,6 +31,7 @@
 		4D8A5DE2291310740059C967 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A5DE1291310740059C967 /* SettingsView.swift */; };
 		4D9BDC92291719F300E82BDB /* ForecastAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9BDC91291719F300E82BDB /* ForecastAppTests.swift */; };
 		4D9BDC9A29171A6900E82BDB /* ApiResoureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9BDC9929171A6900E82BDB /* ApiResoureTests.swift */; };
+		4D9BDC9C29171AED00E82BDB /* ParseManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9BDC9B29171AED00E82BDB /* ParseManagerTests.swift */; };
 		4DFE3BBB2912F16000C50047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFE3BBA2912F16000C50047 /* AppDelegate.swift */; };
 		4DFE3BBD2912F16000C50047 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFE3BBC2912F16000C50047 /* SceneDelegate.swift */; };
 		4DFE3BC42912F16200C50047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DFE3BC32912F16200C50047 /* Assets.xcassets */; };
@@ -91,6 +92,7 @@
 		4D9BDC8F291719F300E82BDB /* ForecastAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForecastAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9BDC91291719F300E82BDB /* ForecastAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastAppTests.swift; sourceTree = "<group>"; };
 		4D9BDC9929171A6900E82BDB /* ApiResoureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResoureTests.swift; sourceTree = "<group>"; };
+		4D9BDC9B29171AED00E82BDB /* ParseManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseManagerTests.swift; sourceTree = "<group>"; };
 		4DFE3BB72912F16000C50047 /* WeatherForecastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherForecastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFE3BBA2912F16000C50047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DFE3BBC2912F16000C50047 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				4D9BDC9929171A6900E82BDB /* ApiResoureTests.swift */,
+				4D9BDC9B29171AED00E82BDB /* ParseManagerTests.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 			files = (
 				4D9BDC9A29171A6900E82BDB /* ApiResoureTests.swift in Sources */,
 				4D9BDC92291719F300E82BDB /* ForecastAppTests.swift in Sources */,
+				4D9BDC9C29171AED00E82BDB /* ParseManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
