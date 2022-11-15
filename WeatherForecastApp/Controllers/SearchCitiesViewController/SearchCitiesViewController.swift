@@ -2,10 +2,9 @@
 import UIKit
 import MapKit
 
-class SearchCitiesViewController: UIViewController {
+final class SearchCitiesViewController: UIViewController {
     
-    var completionHandler:((CLLocationCoordinate2D) -> Void)?
-    
+    var presenter: SearchCitiesPresenterProtocol?
     private let searchBar: UISearchBar = {
         
         let searchBar = UISearchBar()
@@ -68,21 +67,6 @@ class SearchCitiesViewController: UIViewController {
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
-    private func updateSearchResults(selected: MKLocalSearchCompletion) {
-        let searchRequest = MKLocalSearch.Request(completion: selected)
-        let search = MKLocalSearch(request: searchRequest)
-        
-        search.start { (response, error) in
-            if let error = error {
-                print(error.localizedDescription)
-            }
-            let coordinate = response?.mapItems.first?.placemark.coordinate
-            if let completionHandler = self.completionHandler, let coordinate = coordinate {
-                completionHandler(coordinate)
-            }
-            self.dismiss(animated: true, completion: nil)
-        }
-    }
 }
 
 
@@ -103,7 +87,11 @@ extension SearchCitiesViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        updateSearchResults(selected: searchResults[indexPath.row])
+        DispatchQueue.global().async { [unowned self] in
+            presenter?.updateSearchResults(with: self.searchResults[indexPath.row] )
+
+        }
+        
     }
 }
 

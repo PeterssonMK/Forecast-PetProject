@@ -396,8 +396,8 @@
 		4DFE3BF9291304C200C50047 /* SearchCitiesViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4D8A5DDC291310300059C967 /* SearchCitiesViewController.swift */,
 				4D5BAAD82923C9A6002AE591 /* SearchCitiesAssembly.swift */,
+				4D8A5DDC291310300059C967 /* SearchCitiesViewController.swift */,
 				4D5BAADA2923C9DE002AE591 /* SearchCitiesPresenter.swift */,
 				4D5BAADC2923C9EA002AE591 /* SearchCitiesRouter.swift */,
 				4D5BAADE2923CA0D002AE591 /* SearchCitiesInteractor.swift */,

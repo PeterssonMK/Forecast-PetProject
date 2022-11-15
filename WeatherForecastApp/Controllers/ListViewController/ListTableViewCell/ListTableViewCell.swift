@@ -4,7 +4,7 @@ import UIKit
 
 class ListTableViewCell: UITableViewCell {
     
-    /// Метка ячейки
+
     var weatherImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
@@ -12,7 +12,7 @@ class ListTableViewCell: UITableViewCell {
         return imageView
     }()
     
-    /// Заголовок
+ 
     let cityNameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Geeza Pro", size: 21)
