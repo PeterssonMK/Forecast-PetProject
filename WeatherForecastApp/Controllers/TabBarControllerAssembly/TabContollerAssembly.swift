@@ -4,25 +4,28 @@ import UIKit
 
 // Container class for 3 VC.
 
-// instantiates in  sceneDelegate
+// instantiates in  sceneDelegate !
 
 final class TabBarControllerAssembly {
     
     let coreDataService: ReadableDatabase & WritableDatabase
     let userDefaultsManager: UserDefaultsManagerProtocol
     
-    init(coreDataService: ReadableDatabase & WritableDatabase, userDefaultsManager: UserDefaultsManagerProtocol) {
+    init(coreDataService: ReadableDatabase & WritableDatabase = CoreDataService(),
+         userDefaultsManager: UserDefaultsManagerProtocol = UserDefaultsManager()) {
         self.coreDataService = coreDataService
         self.userDefaultsManager = userDefaultsManager
     }
     
     func createViewController() -> UITabBarController {
         
-        //
+        
+      
         let detailsViewControllerAssembly = DetailsViewControllerAssembly(coreDataService: coreDataService, userDefaultsManager: userDefaultsManager)
         let detailsViewController = detailsViewControllerAssembly.createViewController()
         
         let listViewControllerAssembly = ListViewControllerAssembly(coreDataService: coreDataService, userDefaultsManager: userDefaultsManager)
+        
         let listViewController = listViewControllerAssembly.createViewController(detailsViewController: detailsViewController)
         
         let navigationControllerRootList = UINavigationController(rootViewController: listViewController)

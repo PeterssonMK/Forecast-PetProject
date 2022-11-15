@@ -22,9 +22,17 @@
 		4D5BAAEF29240944002AE591 /* CityWeatherHourly+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BAAEB29240944002AE591 /* CityWeatherHourly+CoreDataProperties.swift */; };
 		4D5BAAF029240944002AE591 /* CityWeather+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BAAEC29240944002AE591 /* CityWeather+CoreDataClass.swift */; };
 		4D5BAAF129240944002AE591 /* CityWeather+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BAAED29240944002AE591 /* CityWeather+CoreDataProperties.swift */; };
+		4D5BAACF2923C8FF002AE591 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BAACE2923C8FF002AE591 /* ListPresenter.swift */; };
+		4D5BAAD32923C91E002AE591 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BAAD22923C91E002AE591 /* ListRouter.swift */; };
+		4D5BAAD52923C92E002AE591 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BAAD42923C92E002AE591 /* ListInteractor.swift */; };
+		4D5BAAD72923C942002AE591 /* ListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BAAD62923C942002AE591 /* ListWorker.swift */; };
+		4D5BAAD92923C9A6002AE591 /* SearchCitiesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BAAD82923C9A6002AE591 /* SearchCitiesAssembly.swift */; };
+		4D5BAADB2923C9DE002AE591 /* SearchCitiesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BAADA2923C9DE002AE591 /* SearchCitiesPresenter.swift */; };
+		4D5BAADD2923C9EA002AE591 /* SearchCitiesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BAADC2923C9EA002AE591 /* SearchCitiesRouter.swift */; };
+		4D5BAADF2923CA0D002AE591 /* SearchCitiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BAADE2923CA0D002AE591 /* SearchCitiesInteractor.swift */; };
+		4D5BAAE12923CA1A002AE591 /* SearchCitiesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BAAE02923CA1A002AE591 /* SearchCitiesWorker.swift */; };
 		4D8A5DD429130FC70059C967 /* ListViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A5DD329130FC70059C967 /* ListViewControllerAssembly.swift */; };
 		4D8A5DD629130FD40059C967 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A5DD529130FD40059C967 /* ListViewController.swift */; };
-		4D8A5DD829130FE40059C967 /* ListViewController+AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A5DD729130FE40059C967 /* ListViewController+AlertController.swift */; };
 		4D8A5DDB291310120059C967 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A5DDA291310120059C967 /* ListTableViewCell.swift */; };
 		4D8A5DDD291310300059C967 /* SearchCitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A5DDC291310300059C967 /* SearchCitiesViewController.swift */; };
 		4D8A5DDF2913104A0059C967 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A5DDE2913104A0059C967 /* SettingsViewController.swift */; };
@@ -84,9 +92,17 @@
 		4D5BAAEB29240944002AE591 /* CityWeatherHourly+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CityWeatherHourly+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4D5BAAEC29240944002AE591 /* CityWeather+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CityWeather+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4D5BAAED29240944002AE591 /* CityWeather+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CityWeather+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4D5BAACE2923C8FF002AE591 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		4D5BAAD22923C91E002AE591 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		4D5BAAD42923C92E002AE591 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		4D5BAAD62923C942002AE591 /* ListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorker.swift; sourceTree = "<group>"; };
+		4D5BAAD82923C9A6002AE591 /* SearchCitiesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCitiesAssembly.swift; sourceTree = "<group>"; };
+		4D5BAADA2923C9DE002AE591 /* SearchCitiesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCitiesPresenter.swift; sourceTree = "<group>"; };
+		4D5BAADC2923C9EA002AE591 /* SearchCitiesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCitiesRouter.swift; sourceTree = "<group>"; };
+		4D5BAADE2923CA0D002AE591 /* SearchCitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCitiesInteractor.swift; sourceTree = "<group>"; };
+		4D5BAAE02923CA1A002AE591 /* SearchCitiesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCitiesWorker.swift; sourceTree = "<group>"; };
 		4D8A5DD329130FC70059C967 /* ListViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerAssembly.swift; sourceTree = "<group>"; };
 		4D8A5DD529130FD40059C967 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		4D8A5DD729130FE40059C967 /* ListViewController+AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController+AlertController.swift"; sourceTree = "<group>"; };
 		4D8A5DDA291310120059C967 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		4D8A5DDC291310300059C967 /* SearchCitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCitiesViewController.swift; sourceTree = "<group>"; };
 		4D8A5DDE2913104A0059C967 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -381,6 +397,11 @@
 			isa = PBXGroup;
 			children = (
 				4D8A5DDC291310300059C967 /* SearchCitiesViewController.swift */,
+				4D5BAAD82923C9A6002AE591 /* SearchCitiesAssembly.swift */,
+				4D5BAADA2923C9DE002AE591 /* SearchCitiesPresenter.swift */,
+				4D5BAADC2923C9EA002AE591 /* SearchCitiesRouter.swift */,
+				4D5BAADE2923CA0D002AE591 /* SearchCitiesInteractor.swift */,
+				4D5BAAE02923CA1A002AE591 /* SearchCitiesWorker.swift */,
 			);
 			path = SearchCitiesViewController;
 			sourceTree = "<group>";
@@ -390,7 +411,10 @@
 			children = (
 				4D8A5DD329130FC70059C967 /* ListViewControllerAssembly.swift */,
 				4D8A5DD529130FD40059C967 /* ListViewController.swift */,
-				4D8A5DD729130FE40059C967 /* ListViewController+AlertController.swift */,
+				4D5BAACE2923C8FF002AE591 /* ListPresenter.swift */,
+				4D5BAAD22923C91E002AE591 /* ListRouter.swift */,
+				4D5BAAD42923C92E002AE591 /* ListInteractor.swift */,
+				4D5BAAD62923C942002AE591 /* ListWorker.swift */,
 				4D8A5DD929130FF40059C967 /* ListTableViewCell */,
 			);
 			path = ListViewController;
@@ -555,6 +579,8 @@
 				4D5BAAEE29240944002AE591 /* CityWeatherHourly+CoreDataClass.swift in Sources */,
 				4DFE3BDA2912F9C000C50047 /* CityWeatherCopy.swift in Sources */,
 				4DFE3BD52912F93E00C50047 /* UDParameter.swift in Sources */,
+				4D34233F2913FE5500C77B21 /* CityWeather+CoreDataClass.swift in Sources */,
+				4D5BAAD32923C91E002AE591 /* ListRouter.swift in Sources */,
 				4DFE3BE72912FA7900C50047 /* QueryService.swift in Sources */,
 				4DFE3BF62913045800C50047 /* LoadOperation.swift in Sources */,
 				4DFE3BE92912FA8C00C50047 /* NetworkManager.swift in Sources */,
@@ -572,19 +598,29 @@
 				4DFE3BFD2913051C00C50047 /* TabContollerAssembly.swift in Sources */,
 				4D3423232913E95300C77B21 /* HeadingModel.swift in Sources */,
 				4D8A5DD829130FE40059C967 /* ListViewController+AlertController.swift in Sources */,
+				4D5BAADB2923C9DE002AE591 /* SearchCitiesPresenter.swift in Sources */,
+				4D34233D2913FE5500C77B21 /* CityWeatherHourly+CoreDataClass.swift in Sources */,
 				4D34234A291400CC00C77B21 /* BackgroundView.swift in Sources */,
 				4DFE3BEC2912FABA00C50047 /* NetworkManagerError.swift in Sources */,
 				4DFE3BBB2912F16000C50047 /* AppDelegate.swift in Sources */,
 				4D3423212913E94300C77B21 /* CollectionTableModel.swift in Sources */,
 				4D5BAAF129240944002AE591 /* CityWeather+CoreDataProperties.swift in Sources */,
 				4D8A5DD629130FD40059C967 /* ListViewController.swift in Sources */,
+				4D5BAAD92923C9A6002AE591 /* SearchCitiesAssembly.swift in Sources */,
 				4DFE3C022913054E00C50047 /* DetailsViewController.swift in Sources */,
+				4D5BAAE12923CA1A002AE591 /* SearchCitiesWorker.swift in Sources */,
 				4DFE3BD32912F93000C50047 /* UserDefaultsManager.swift in Sources */,
 				4D34231D2913E79100C77B21 /* CoreDataService.swift in Sources */,
+				4D5BAAD52923C92E002AE591 /* ListInteractor.swift in Sources */,
+				4D5BAACF2923C8FF002AE591 /* ListPresenter.swift in Sources */,
 				4DFE3BDC2912F9D200C50047 /* CityWeatherHourlyCopy.swift in Sources */,
 				4D8A5DE2291310740059C967 /* SettingsView.swift in Sources */,
+				4D34233E2913FE5500C77B21 /* CityWeatherHourly+CoreDataProperties.swift in Sources */,
+				4D5BAADD2923C9EA002AE591 /* SearchCitiesRouter.swift in Sources */,
+				4D5BAAD72923C942002AE591 /* ListWorker.swift in Sources */,
 				4DFE3BBD2912F16000C50047 /* SceneDelegate.swift in Sources */,
 				4DFE3BF42913043000C50047 /* AsyncOperation.swift in Sources */,
+				4D5BAADF2923CA0D002AE591 /* SearchCitiesInteractor.swift in Sources */,
 				4DFE3BEE291303EA00C50047 /* ParseManager.swift in Sources */,
 				4D8A5DDD291310300059C967 /* SearchCitiesViewController.swift in Sources */,
 				4D3423442914009400C77B21 /* HeadingTableViewCell.swift in Sources */,
