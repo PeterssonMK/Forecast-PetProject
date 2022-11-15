@@ -37,11 +37,14 @@ extension CoreDataService: ReadableDatabase, WritableDatabase {
 //MARK: Creating Data in CD (called in ListVC when new city is added)
     func saveСityWeather(cityWeatherCopy: СityWeatherCopy) {
         //MARK: 1
-        let context = backgroundContext// saving to CD on background/ using private queue
+        let context = backgroundContext // saving to CD on background/ using private queue
         
-        context.perform {                                       // .perform guarantees that the closure passed in is executed on the queue that is associated with the context to which we appeal. closure is run asynchronously
+        context.perform{
             
-            let cityWeather = CityWeather(context: context)   // CityWeather is the Entity
+            let cityWeather = CityWeather(context: context)
+            // .perform guarantees that the closure passed in is executed on the queue that is associated with the context to which we appeal. closure is run asynchronously
+            
+                 // CityWeather is the Entity
             
 // also possible: cw = NSEntityDescription.insertNewObject(forEntityName: "CityWeather, into: context) as! CityWeather
 // cw.cityName = ..... etc

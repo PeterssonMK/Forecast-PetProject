@@ -81,16 +81,24 @@ final class ListViewController: UITableViewController {
             presenter?.deleteCity(city:cityToDelete)                         // delete city from core data
             cityWeatherCopyArray.remove(at: indexPath.row)
             
-            if cityWeatherCopyArray.count > 1{
+            if cityWeatherCopyArray.count >= 1{
                 
                 if (indexPath.row - 1) < 0 {
                 guard let firstInArray = cityWeatherCopyArray.first else {return}
-                presenter?.updateDetailsVC(with: firstInArray)
+                    //DispatchQueue.main.async {
+                        self.presenter?.updateDetailsVC(with: firstInArray)
+                        
+                    //}
                     
                 } else {
                     
                     let elementInArray = cityWeatherCopyArray[indexPath.row - 1]
-                    presenter?.updateDetailsVC(with: elementInArray)
+                    print(String(describing: elementInArray))
+                    
+                    //DispatchQueue.main.async {
+                        self.presenter?.updateDetailsVC(with: elementInArray)
+                    
+               // }
                     
                 }
             }

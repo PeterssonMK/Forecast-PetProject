@@ -22,6 +22,7 @@ final class DetailsViewController: UITableViewController {
             if newValue == nil {
                 userDefaultsManager.remove(key: .coordinates)
             }
+            tableView.reloadData()
         }
     }
     
