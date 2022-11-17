@@ -32,6 +32,7 @@ extension CityWeather {
 
 }
 
+// MARK: Generated accessors for hourly
 extension CityWeather {
 
     @objc(addHourlyObject:)
@@ -47,7 +48,6 @@ extension CityWeather {
     @NSManaged public func removeFromHourly(_ values: NSSet)
 
 }
-
 
 extension CityWeather : Identifiable {
 

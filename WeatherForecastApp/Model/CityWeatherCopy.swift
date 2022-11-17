@@ -21,7 +21,7 @@ struct СityWeatherCopy {
     
     var dtString: String {
         let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "RU")
+        dateFormatter.locale = Locale(identifier: "UK")
         dateFormatter.setLocalizedDateFormatFromTemplate("dd, HH:mm")
         let localDate = dateFormatter.string(from: date)
         return localDate

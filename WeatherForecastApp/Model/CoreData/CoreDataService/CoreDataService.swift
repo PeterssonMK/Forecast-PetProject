@@ -21,7 +21,7 @@ final class CoreDataService {
     }()
     
     init() {                                                    // new default CDproject would imply lazy var in AppDelegate
-        persistentContainer = NSPersistentContainer(name: "CityWeatherModel")
+        persistentContainer = NSPersistentContainer(name: "Weather")
         persistentContainer.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 print(error.localizedDescription)

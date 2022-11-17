@@ -13,7 +13,7 @@
         <attribute name="pressure" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="speed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="temperature" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <relationship name="hourly" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CityWeatherHourly" inverseName="cityWeather" inverseEntity="CityWeatherHourly"/>
+        <relationship name="hourly" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CityWeatherHourly" inverseName="cityWeather" inverseEntity="CityWeatherHourly"/>
     </entity>
     <entity name="CityWeatherHourly" representedClassName="CityWeatherHourly" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
@@ -22,7 +22,7 @@
         <relationship name="cityWeather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CityWeather" inverseName="hourly" inverseEntity="CityWeather"/>
     </entity>
     <elements>
-        <element name="CityWeather" positionX="-136.892822265625" positionY="-156.9501037597656" width="128" height="238"/>
-        <element name="CityWeatherHourly" positionX="-375.7300415039062" positionY="52.71661376953125" width="128" height="103"/>
+        <element name="CityWeather" positionX="-6363.892822265625" positionY="288.0498962402344" width="128" height="238"/>
+        <element name="CityWeatherHourly" positionX="-6602.730041503906" positionY="497.7166137695312" width="128" height="103"/>
     </elements>
 </model>
