@@ -42,7 +42,7 @@ final class ListViewController: UITableViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        self.tableView.reloadData()
+        
         presenter?.fetchRequest()                           // query request to the end point
         self.tableView.reloadData()
         
